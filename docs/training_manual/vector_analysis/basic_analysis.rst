@@ -100,7 +100,7 @@ We first need to load the data to work with.
    and we will also exclude ``NULL`` values.
 
 #. Right click on the ``roads`` layer and choose :guilabel:`Filter...`.
-#. In the dialog that pops up we filter these features with the following expression::
+#. In the dialog that pops up, paste the following expression in :guilabel:`Provider Specific Filter Expression` to filter the features::
 
      "highway" NOT IN ('footway', 'path', 'unclassified', 'track') AND "highway" IS NOT NULL
 
@@ -109,6 +109,8 @@ We first need to load the data to work with.
 
    ``IS NOT NULL`` combined with the ``AND`` operator excludes roads with
    no value in the ``highway`` field.
+
+#. Click on :guilabel:`OK`
 
    Note the |indicatorFilter| icon next to the ``roads`` layer.
    It helps you remember that this layer has a filter activated,
@@ -149,7 +151,7 @@ Feel free to choose the best workflow for yourself.
    the new GeoPackage ``vector_analysis``
 #. Change the :guilabel:`Layer name` to ``roads_34S``
 #. Change the :guilabel:`CRS` to *WGS 84 / UTM zone 34S*
-#. Click on :guilabel:`OK`:
+#. Click on :guilabel:`OK`
 
    .. figure:: img/save_roads_34S.png
       :align: center
